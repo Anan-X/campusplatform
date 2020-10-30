@@ -1,6 +1,10 @@
 <template>
    <div>
-    <nar-bar title="校园动态" :isLeftArrow=true />
+    <nar-bar title="校园动态" 
+    :isLeftArrow=true 
+    :isRightArrow=true
+    rightText="发说说"
+    @clickRight="onClickRight" />
     <tab-bar :items=items />
   </div>
 </template>
@@ -25,6 +29,13 @@ export default {
   components: {
     NarBar,
     TabBar
+  },
+  methods: {
+    onClickRight() {
+      this.$router.push({
+        path: '/share'
+      })
+    }
   }
 }
 </script>

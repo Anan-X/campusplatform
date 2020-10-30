@@ -83,6 +83,13 @@ export function apiGetStudentInfo () {
     method: 'get'
   })
 }
+// 获取学期
+export function apiGetSemester () {
+  return request({
+    url: '/users/semester',
+    method: 'get'
+  })
+}
 
 // 获取学生成绩
 export function apiGetStudentScore (student_id, semester_id) {

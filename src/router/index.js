@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 
 const Home = () => import('views/home/Home.vue')
 const Space = () => import('views/space/Space')
+const Share = () => import('views/space/child/Share')
 const Market = () => import('views/market/Market')
 const Found = () => import('views/found/Found')
 const Curriculum = () => import('views/curriculum/Curriculum')
@@ -29,6 +30,10 @@ const routes = [
   {
     path: '/space',
     component: Space
+  },
+  {
+    path: '/share',
+    component: Share
   },
   {
     path: '/market',

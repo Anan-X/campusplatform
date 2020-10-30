@@ -6,11 +6,11 @@
     />
     <van-form @submit="onSubmit">
       <van-field
-        v-model="username"
-        name="username"
-        label="用户名"
-        placeholder="用户名"
-        :rules="[{ required: true, message: '请填写用户名' }]"
+        v-model="name"
+        name="name"
+        label="昵称"
+        placeholder="昵称"
+        :rules="[{ required: true, message: '请填写昵称' }]"
         @keyup="BtnisUserName"
       />
       <van-field
@@ -79,7 +79,7 @@ import NarBar from 'components/common/narbar/NarBar'
 export default {
   data() {
     return {
-      username: '',
+      name: '',
       password: '',
       ConfirmPass: '',
       studentID: '',

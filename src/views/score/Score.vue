@@ -25,7 +25,7 @@
 <script>
 import NarBar from 'components/common/narbar/NarBar'
 
-import {apiGetStudentScore} from 'network/user'
+import {apiGetStudentScore, apiGetSemester} from 'network/user'
 export default {
   data() {
     return {
@@ -59,6 +59,12 @@ export default {
     NarBar
   },
   created () {
+     // 获取学期
+      apiGetSemester()
+      .then(res  => {
+        console.log(res)
+        this.option = res.data.data
+      })
     apiGetStudentScore(this.$store.state.userInfo.user_id, this.value)
     .then(res => {
       if(res.data.code === 200){

@@ -25,31 +25,24 @@ export default {
           return item = "学号"
         } else if (item === 'name') {
           return item = "姓名"
-        } else if (item === 'classroom') {
+        } else if (item === 'classroomname') {
           return item = "班级"
         } 
         else if (item === 'sex') {
           return item = "性别"
         }
-        else if (item === 'card_id') {
-          return item = "身份证号"
+        else if (item === 'schoolname') {
+          return item = "所属学院"
         }
-        else if (item === 'school') {
-          return item = "学校"
+        else if (item === 'gradename') {
+          return item = "年级"
         }
-        else if (item === 'college') {
-          return item = "学院"
-        }
-        else if (item === 'adress') {
+        else if (item === 'address') {
           return item = "籍贯"
         }
         else if (item === 'phone') {
           return item = "手机号"
-        }
-        else if (item === 'star_year') {
-          return item = "年级"
-        }
-        
+        }        
         else {
           return item
         }

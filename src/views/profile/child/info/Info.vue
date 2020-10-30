@@ -15,8 +15,8 @@
       <van-field
         v-model="info.name"
         name="username"
-        label="用户名"
-        placeholder="用户名"
+        label="昵称"
+        placeholder="昵称"
         :disabled=isDisabled
         @blur="BtnisUsername"
       />
@@ -42,8 +42,8 @@
         :disabled=isDisabled
       />
       <van-field
-        v-model="studentInfo.classroom"
-        name="classroom"
+        v-model="studentInfo.classroomname"
+        name="classroomname"
         label="班级"
         placeholder="班级"
         disabled

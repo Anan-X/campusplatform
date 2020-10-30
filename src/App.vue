@@ -31,9 +31,11 @@ export default {
   },
   mounted() {
     if(sessionStorage.getItem('store')) {
+      console.log('刷新')
       apiGetUserInfo().then(res => {
         if (res.data.code === 200){
           this.$store.commit('loginAfter', res)
+          console.log('储存')
         }
       })
     }

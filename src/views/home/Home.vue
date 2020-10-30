@@ -20,7 +20,7 @@ import TabBar from 'components/common/tabbar/TabBar'
 export default {
   data () {
     return {
-      images: ['http://img.yzcdn.cn/vant/apple-1.jpg','https://img.yzcdn.cn/vant/apple-1.jpg']
+      images: [require('assets/img/swipe02.png'),require('assets/img/swipe03.png'),require('assets/img/swipe01.png')]
     }
   },
   methods: {

@@ -53,7 +53,7 @@ export default {
       return !this.isAdmin ? '' : '个人资料'
     }
   },
-  mounted () {
+  created () {
     if (this.$store.state.userInfo) {
       this.userInfo = this.$store.state.userInfo
     } else {
