@@ -18,6 +18,7 @@ const ProFile = () => import('views/profile/ProFile')
 const Info = () => import('views/profile/child/info/Info')
 const Login = () => import('views/profile/child/login/Login')
 const Resiger = () => import('views/profile/child/resiger/Resiger')
+const EditPass = () => import('views/profile/child/editpass/EditPass')
 const routes = [
   {
     path: '/',
@@ -75,6 +76,10 @@ const routes = [
   {
     path: '/resiger',
     component: Resiger
+  },
+  {
+    path: '/editpass',
+    component: EditPass
   }
 ]
 
@@ -86,15 +91,15 @@ const router = new VueRouter({
 // 导航守卫
 // 使用 router.beforeEach 注册一个全局前置守卫，判断用户是否登陆
   router.beforeEach((to, from, next) => {
-    if(to.path === '/info') {
+    if(to.path === '/login' || to.path === '/register' || to.path === '/home'|| to.path === '/profile') {
+      next()
+    } else {
       let token = localStorage.getItem('token');
-      if (token === null || token === '') {
+      if (token === null || token === '' || token === undefined) {
         next('/login');
       } else {
         next();
       }
-    } else {
-      next ()
     }
   })
 

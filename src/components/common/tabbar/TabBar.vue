@@ -14,7 +14,10 @@ export default {
     items:{
       type: Array,
       default () {
-        return [{path: '/home', icon: 'home-o', title: '首页'}, {path: '/profile', icon: 'user-o', title: '我的'}]
+        return [
+          {path: '/home', icon: 'home-o', title: '首页'}, 
+          {path: '/profile', icon: 'user-o', title: '我的'}
+        ]
       }
     }
   },

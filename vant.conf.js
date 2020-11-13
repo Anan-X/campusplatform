@@ -24,10 +24,16 @@ import {
   Picker,
   Tab, 
   Tabs,
-  Empty
+  Empty,
+  List,
+  Row,
+  Col,
+  ImagePreview,
+  Icon
 } from 'vant'
 
 Vue.use(Button)
+Vue.use(Icon)
 Vue.use(Tabbar)
 Vue.use(TabbarItem)
 Vue.use(NavBar)
@@ -52,3 +58,7 @@ Vue.use(Picker)
 Vue.use(Tab)
 Vue.use(Tabs)
 Vue.use(Empty)
+Vue.use(List)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(ImagePreview);

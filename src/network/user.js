@@ -68,6 +68,14 @@ export function apiResiger (data) {
   })
 }
 
+// 用户密码修改
+export function apiEditPass (data) {
+  return request ({
+    url: '/users/password',
+    method: 'post',
+    data
+  })
+}
 // 获取用户基本信息
 export function apiGetUserInfo () {
   return request({
@@ -112,6 +120,64 @@ export function apiGetCourse(student_id, weekth, day) {
       student_id,
       weekth,
       day
+    }
+  })
+}
+
+
+
+// 获取说说数据 
+export function apiSpace(index) {
+  return request({
+    url: '/users/space',
+    method:'get',
+    params: {
+      index
+    }
+  })
+}
+// 查看自己发的说说
+export function apiSpaceMine(index, user_id) {
+  return request({
+    url: '/users/space_mine',
+    method:'get',
+    params: {
+      index,
+      user_id
+    }
+  })
+}
+// 发表说说
+export function apiShare(user_id, imgs, text) {
+  return request({
+    url: '/users/share',
+    method:'post',
+    data: {
+      user_id,
+      imgs,
+      text
+    }
+  })
+}
+// 发表评论
+export function apiSendMsg(space_id,user_id, msg) {
+  return request({
+    url: '/users/space_send_msg',
+    method:'post',
+    data: {
+      space_id,
+      user_id,
+      msg
+    }
+  })
+}
+// 发表评论
+export function apiDeleteSpace(space_id) {
+  return request({
+    url: '/users/space_delete',
+    method:'post',
+    data: {
+      space_id
     }
   })
 }

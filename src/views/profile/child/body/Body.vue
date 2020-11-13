@@ -3,6 +3,7 @@
     <van-divider />
     <!-- 注销 -->
     <van-cell is-link @click="showPopup">注销</van-cell>
+    <van-cell is-link @click="editPass">修改密码</van-cell>
     <van-popup
       v-model="show"
       closeable
@@ -34,6 +35,9 @@ export default {
     exitBtn () {
       this.$store.commit('exit')
       this.$router.go(0)
+    },
+    editPass() {
+      this.$router.push('editpass')
     }
   },
   computed: {

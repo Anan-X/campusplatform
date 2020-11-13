@@ -7,6 +7,7 @@
   :right-text=rightText
   @click-left="onClickLeft"
   @click-right="onClickRight"
+  :fixed="fixed"
   />
 </template>
 
@@ -28,6 +29,10 @@ export default {
         return ''
       }
     },
+    fixed: {
+      type:Boolean,
+      default: false
+    }
     
   },
   methods: {

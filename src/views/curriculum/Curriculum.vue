@@ -80,6 +80,78 @@
             text: '第二周',
             value: '2'
           },
+          {
+            text: '第三周',
+            value: '3'
+          },
+          {
+            text: '第四周',
+            value: '4'
+          },
+          {
+            text: '第五周',
+            value: '5'
+          },
+          {
+            text: '第六周',
+            value: '6'
+          },
+          {
+            text: '第七周',
+            value: '7'
+          },
+          {
+            text: '第八周',
+            value: '8'
+          },
+          {
+            text: '第九周',
+            value: '9'
+          },
+          {
+            text: '第十周',
+            value: '10'
+          },
+          {
+            text: '第十一周',
+            value: '11'
+          },
+          {
+            text: '第十二周',
+            value: '12'
+          },
+          {
+            text: '第十三周',
+            value: '13'
+          },
+          {
+            text: '第十四周',
+            value: '14'
+          },
+          {
+            text: '第十五周',
+            value: '15'
+          },
+          {
+            text: '第十六周',
+            value: '16'
+          },
+          {
+            text: '第十七周',
+            value: '17'
+          },
+          {
+            text: '第十八周',
+            value: '18'
+          },
+          {
+            text: '第十九周',
+            value: '19'
+          },
+          {
+            text: '第二十周',
+            value: '20'
+          },
         ],
         // 各天的课程
         course: Array
